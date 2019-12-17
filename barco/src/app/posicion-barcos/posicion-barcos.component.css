@@ -1,0 +1,13 @@
+table{
+    display: flex;
+}
+td {
+    border: orange 2px solid;
+  }
+.tablero{
+    display: flex;
+    align-content: space-between;
+}
+table{
+    padding: 8%;
+}
