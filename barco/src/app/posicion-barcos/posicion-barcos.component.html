@@ -2,18 +2,10 @@
 
 <div class="tablero">
     <table>
-        <tbody class="filas" *ngFor="let letra of tableA">
-            <tr>{{letra}}</tr>
-            <tr *ngFor="let number of table">
-                <td>{{number}}{{letra}}</td>
-              </tr>      
-        </tbody>
-    </table>
-    <table>
           <tbody class="filas" *ngFor="let letra of tableA">
               <tr>{{letra}}</tr>
               <tr *ngFor="let number of table">
-                  <td>{{number}}{{letra}}</td>
+                  <td ><button (click)="getPositionsBots(number, letra)">{{number}}{{letra}}</button></td>
                 </tr>      
           </tbody>
     </table>
