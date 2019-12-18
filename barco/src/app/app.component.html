@@ -4,7 +4,7 @@
         <tbody class="filas" *ngFor="let letra of tableA">
             <tr>{{letra}}</tr>
             <tr *ngFor="let number of table">
-                <td>{{number}}{{letra}}</td>
+                <td (click)='batle'>{{number}}{{letra}}</td>
               </tr>      
         </tbody>
     </table>
