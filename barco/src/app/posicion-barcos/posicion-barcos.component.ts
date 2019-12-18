@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-posicion-barcos',
@@ -11,8 +12,12 @@ export class PosicionBarcosComponent implements OnInit {
   tableA = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
 
   constructor() { }
+  
+ngOnInit() {
+  }
 
-  ngOnInit() {
+  getPositionsBots(a, b){
+    console.log(a, b);
   }
 
 }
